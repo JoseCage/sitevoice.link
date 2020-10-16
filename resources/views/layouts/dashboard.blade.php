@@ -104,7 +104,7 @@
 							</li>
 
 							<li>
-								<a href="#"
+								<a href="{{ route('dashboard.settings') }}"
 									class="mb-1 px-2 py-2 rounded-lg flex items-center font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-200">
 									<svg xmlns="http://www.w3.org/2000/svg" class="mr-4 opacity-50" width="24" height="24"
 										viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -203,7 +203,7 @@
 						</li>
 
 						<li>
-							<a href="#"
+							<a href="{{ route('dashboard.settings') }}"
 								class="mb-1 px-2 py-2 rounded-lg flex items-center font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-200">
 								<svg xmlns="http://www.w3.org/2000/svg" class="mr-4 opacity-50" width="24" height="24"
 									viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
