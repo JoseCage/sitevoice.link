@@ -64,6 +64,10 @@ Route::domain('app.'.config('app.url'))->group(function ($app) {
             $site->livewire('/create', 'dashboard.sites.newArticle')->name('dashboard.articles.create');
             $site->post('download/{article:uuid}', 'ArticleController@downloadArticle')->name('dashboard.articles.download');
         });
+
+        $app->group(['prefix' => 'settings'], function ($site) {
+            $site->livewire('/', 'dashboard.settings.setting')->name('dashboard.settings');
+        });
     });
 });
 
