@@ -49,7 +49,7 @@
 					<div class="flex items-center justify-between mb-4">
 						<h2 class="text-xl font-bold text-gray-800">Sites</h2>
 
-						<a href="#{{-- route('dashboard.sites.create') --}}" @click="createSiteModal = true" class="shadow inline-flex items-center bg-blue-500 hover:bg-blue-600 focus:outline-none focus:shadow-outline text-white font-semibold py-2 px-4 rounded-lg">
+						<a href="{{ route('dashboard.sites.create') }}" @click="createSiteModal = true" class="shadow inline-flex items-center bg-blue-500 hover:bg-blue-600 focus:outline-none focus:shadow-outline text-white font-semibold py-2 px-4 rounded-lg">
 							<svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 								<rect x="0" y="0" width="24" height="24" stroke="none"></rect>
 								<line x1="12" y1="5" x2="12" y2="19" />

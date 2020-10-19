@@ -54,7 +54,7 @@ Route::domain('app.'.config('app.url'))->group(function ($app) {
         //$app->livewire('/sites', 'dashboard.dashboard.sites.sites')->name('dashboard');
         $app->group(['prefix' => 'sites'], function ($site) {
             $site->livewire('/', 'dashboard.sites.sites')->name('dashboard.sites');
-            $site->livewire('/create', 'dashboard.sites.create')->name('dashboard.sites.create');
+            $site->livewire('/create', 'dashboard.sites.site-add')->name('dashboard.sites.create');
             //$site->livewire('/edit/{site:uuid}', 'dashboard.sites.edit')->name('dashboard.sites.edit');
             $site->put('/edit/{site:uuid}', 'SiteController@updateSite')->name('dashboard.sites.edit');
             $site->delete('/{site:uuid}', 'SiteController@deleteSite')->name('dashboard.sites.delete');
